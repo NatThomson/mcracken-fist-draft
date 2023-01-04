@@ -1,11 +1,14 @@
 * {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
 }
+
+/*-------- navbar -------- */
 
 .navbar {
     display: flex;
@@ -95,4 +98,75 @@ body {
     .navbar-links.active {
         display: flex;
     }
+}
+
+/*-------- hero img -------- */
+
+.hero-img-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    border-radius: 50%;
+    margin: 14px;
+    animation-name: slow-zoom;
+    animation-duration: 3s;
+}
+
+@keyframes slow-zoom {
+    from{
+      transform: scale(0.8);
+    }
+    to{
+      transform: scale(1);
+    }
+  }
+
+  /*----- home text content -----*/
+  
+.home-content-holder {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.home-content {
+padding: 14px;
+text-align: center;
+width: 450px;
+margin: 3px;
+}
+
+
+
+.hover-underline-animation {
+display: inline-block;
+position: relative;
+color: #333;
+cursor: default;
+}
+
+.hover-underline-animation::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #333;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
 }
