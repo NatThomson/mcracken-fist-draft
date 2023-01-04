@@ -6,6 +6,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #D2D2CF;
 }
 
 /*-------- navbar -------- */
@@ -169,4 +170,37 @@ transition: transform 0.25s ease-out;
 .hover-underline-animation:hover::after {
 transform: scaleX(1);
 transform-origin: bottom left;
+}
+
+/*----- footer --------*/
+
+footer {
+    background-color: #333;
+    color: white;
+    margin-top: 125px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 90px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.social-link {
+    margin-right: 40px;
+}
+
+
+.social-links li a i {
+    font-size: 50px;
+    line-height: revert;
+    text-align: center;
+    color: #fafafa;
+}
+
+.social-links li a i:hover {
+    font-size: 60px;
 }
