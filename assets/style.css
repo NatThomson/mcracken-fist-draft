@@ -1,13 +1,19 @@
 * {
     box-sizing: border-box;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: #D2D2CF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+section {
+    flex: 1;
 }
 
 /*-------- navbar -------- */
@@ -105,17 +111,16 @@ body {
 /*-------- hero img -------- */
 
 .hero-img-holder {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
 .hero-img {
     width: 100%;
     height: auto;
-    max-width: 450px;
-    border-radius: 50%;
+    max-width: 200px;
     margin: 14px;
     animation-name: slow-zoom;
     animation-duration: 3s;
@@ -178,7 +183,6 @@ transform-origin: bottom left;
 footer {
     background-color: #333;
     color: white;
-    margin-top: 125px;
 }
 
 .social-links {
@@ -194,7 +198,6 @@ footer {
     margin-right: 40px;
 }
 
-
 .social-links li a i {
     font-size: 50px;
     line-height: revert;
@@ -205,3 +208,17 @@ footer {
 .social-links li a i:hover {
     font-size: 60px;
 }
+
+/*----- about --------*/
+
+.about-header {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.about-content {
+    text-align: center;
+}
+
+
+
