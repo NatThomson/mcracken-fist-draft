@@ -118,9 +118,10 @@ h1, h2, h3, p {
 
 .hero-img-holder {
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 .hero-img {
