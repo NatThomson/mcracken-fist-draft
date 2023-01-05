@@ -223,8 +223,8 @@ transform-origin: bottom left;
 /*----- footer --------*/
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #fafafa;
+    color: black;
 }
 
 .social-links {
@@ -244,7 +244,7 @@ footer {
     font-size: 50px;
     line-height: revert;
     text-align: center;
-    color: #fafafa;
+    color: #0095ff;
 }
 
 .social-links li a i:hover {
@@ -283,4 +283,14 @@ footer {
     width: 110px;
     height: auto;
     background-blend-mode: normal;
+}
+
+.gradient {
+    width: 100%;
+    height: 3px;
+    background: rgb(101,175,255);
+background: -moz-linear-gradient(132deg, rgba(101,175,255,1) 0%, rgba(0,149,255,1) 34%, rgba(255,165,0,1) 68%);
+background: -webkit-linear-gradient(132deg, rgba(101,175,255,1) 0%, rgba(0,149,255,1) 34%, rgba(255,165,0,1) 68%);
+background: linear-gradient(132deg, rgba(101,175,255,1) 0%, rgba(0,149,255,1) 34%, rgba(255,165,0,1) 68%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#65afff",endColorstr="#ffa500",GradientType=1);
 }
