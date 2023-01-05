@@ -256,19 +256,31 @@ footer {
 .about-header {
     text-align: center;
     padding-top: 30px;
-    text-decoration-line: underline;
 }
 
 .about-content-holder {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.about-content-small-holder {
+    width: 300px;
+    height: fit-content;
+    margin: 12px;
+}
+
+.about-content-small-holder:hover {
+    
+    border-left: solid 1px #0095ff;
+    border-right: solid 1px #0095ff;
 }
 
 .about-content {
     text-align: center;
     width: 300px;
+    padding: 12px;
 }
 
 
