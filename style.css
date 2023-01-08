@@ -156,6 +156,7 @@ h1, h2, h3, p {
   
 .home-content-holder {
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
@@ -342,7 +343,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#65afff",endCo
 }
 
 .middle-collumn {
-    background-color: #D2D2CF;
+    background: rgb(250,250,250);
+background: -moz-linear-gradient(90deg, rgba(250,250,250,1) 15%, rgba(210,210,207,1) 50%, rgba(250,250,250,1) 85%);
+background: -webkit-linear-gradient(90deg, rgba(250,250,250,1) 15%, rgba(210,210,207,1) 50%, rgba(250,250,250,1) 85%);
+background: linear-gradient(90deg, rgba(250,250,250,1) 15%, rgba(210,210,207,1) 50%, rgba(250,250,250,1) 85%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fafafa",endColorstr="#fafafa",GradientType=1);
 }
 
 
@@ -432,4 +437,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#65afff",endCo
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+
+
+  .bg-grey {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgb(250,250,250);
+    background: -moz-linear-gradient(0deg, rgba(250,250,250,1) 15%, rgba(210,210,207,1) 50%, rgba(250,250,250,1) 85%);
+    background: -webkit-linear-gradient(0deg, rgba(250,250,250,1) 15%, rgba(210,210,207,1) 50%, rgba(250,250,250,1) 85%);
+    background: linear-gradient(0deg, rgba(250,250,250,1) 15%, rgba(210,210,207,1) 50%, rgba(250,250,250,1) 85%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fafafa",endColorstr="#fafafa",GradientType=1);
   }
