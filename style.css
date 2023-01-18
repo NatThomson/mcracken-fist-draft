@@ -218,7 +218,7 @@ flex-wrap: wrap;
 .home-content {
 padding: 14px;
 text-align: center;
-width: 450px;
+max-width: 900px;
 margin: 3px;
 }
 
@@ -281,6 +281,7 @@ transform-origin: bottom left;
 .get-in-touch {
     text-decoration: none;
     cursor: pointer;
+    color: #0095ff;
 }
 
 .get-in-touch:hover {
@@ -480,7 +481,7 @@ footer {
 }
 
 .social-links li a i {
-    font-size: 50px;
+    font-size: 90px;
     line-height: revert;
     text-align: center;
     color: #0095ff;
