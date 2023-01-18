@@ -322,7 +322,7 @@ transform-origin: bottom left;
 
 .about-content {
     text-align: center;
-    width: 300px;
+    max-width: 1200px;
     padding: 12px;
 }
 
@@ -346,6 +346,7 @@ transform-origin: bottom left;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 24px;
 
 }
 
