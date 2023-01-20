@@ -183,7 +183,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#65afff",endCo
 
 .hero-img-holder {
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
     width: 100%;
@@ -193,8 +193,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#65afff",endCo
 .hero-img {
     width: 100%;
     height: auto;
-    max-width: 300px;
-    margin: 14px;
+    max-width: 400px;
     animation-name: slow-zoom;
     animation-duration: 3s;
     aspect-ratio: 1/1;
@@ -225,6 +224,10 @@ padding: 14px;
 text-align: center;
 max-width: 900px;
 margin: 3px;
+}
+
+.home-content p i {
+    font-size: 1.5rem;
 }
 
 /*----- Animations -----*/
@@ -331,6 +334,11 @@ transform-origin: bottom left;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.about-img {
+    max-width: 80px;
+    height: auto;
 }
 
 /*-------- Services ----------*/
@@ -512,3 +520,12 @@ footer {
     background-repeat: no-repeat;
   }
 
+  .button {
+    border: none;
+    color: #005875;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+  }
