@@ -438,6 +438,7 @@ transform-origin: bottom left;
     flex-direction: column;
     justify-content: flex-start;
     margin: 24px;
+    width: 435px;
 
 }
 
@@ -614,4 +615,8 @@ footer {
 
 .dog-paw {
     font-size: 1rem;
+}
+
+.middle-collumn {
+    height: 645px;
 }
