@@ -35,3 +35,27 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+//BIGDUCK
+
+const duckBut = document.getElementsByClassName('duck')[0]
+
+quackQuack();
+function quackQuack() {
+    let pattern = ['q', 'u', 'a', 'c', 'k'];
+    let current = 0;
+    let keyHandler = function (event) {
+        if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+            current = 0;
+            return;
+        }
+        current++;
+        if (pattern.length === current) {
+            current = 0;
+            window.alert('quack quack')
+            duckBut.style.display='block'
+            
+        };
+    };
+    document.addEventListener('keydown', keyHandler, false);
+};

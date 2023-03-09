@@ -420,8 +420,10 @@ transform-origin: bottom left;
 }
 
 .about-img {
-    max-width: 80px;
+    max-width: 90px;
     height: auto;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 /*-------- Services ----------*/
@@ -619,4 +621,14 @@ footer {
 
 .middle-collumn {
     height: 645px;
+}
+
+.duck-div {
+    width: 500px;
+}
+
+.duck {
+    display: none;
+    object-fit: contain;
+    width: 500px;
 }
